@@ -181,7 +181,28 @@ select {
 ============================================================================*/
 @font-face {
   font-family: "Oxigen-mono";
-  src: url("./fonts/oxygen-mono/OxygenMono-Regular.ttf");
+  src: url("../fonts/oxygen-mono/OxygenMono-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "boogie-nights-shadow";
+  src: url("../fonts/boogie-nights-shadow/BoogieNightsShadowNF.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoiretOne";
+  src: url("../fonts/poiret-one/PoiretOne-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "york-whiteletter";
+  src: url("../fonts/york-whiteletter/yorkwhiteletter.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -276,4 +297,22 @@ select {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
+}
+
+/*==========================================================================
+
+                            AJUSTES SLIDER
+
+============================================================================*/
+
+.slider .big.title{
+  font-family:"york-whiteletter";
+  font-size: 5rem;
+}
+.slider .big.title em:nth-child(1){
+  font-family: "PoiretOne";
+  margin-left: 2rem;
+}
+.slider .big.title em:nth-child(2){
+  margin-left: 2rem;
 }
