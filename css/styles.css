@@ -209,18 +209,31 @@ select {
 
 /*==========================================================================
 
+                                  BODY
+
+============================================================================*/
+
+body {
+  background: #0f0f0f;
+}
+
+/*==========================================================================
+
                                   HEADER
 
 ============================================================================*/
 
 .main-header {
-  background-color: #000000;
   width: 100%;
-  margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
 }
 
 .containerHeader {
-  width: 95%;
+  background-color: #0000;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -228,6 +241,11 @@ select {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 0px;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  z-index: 100;
 }
 
 .siteLogo {
@@ -251,6 +269,7 @@ select {
   padding-bottom: 10px;
   padding-top: 10px;
   width: 100px;
+  display: none
 }
 
 .headerMenuCentro {
@@ -275,7 +294,7 @@ select {
   font-size: .8rem;
   text-transform: uppercase;
   height: 95px;
-  line-height: 95px;
+  line-height: 1;
   padding: 0 13px;
   text-decoration: none;
   letter-spacing: 0.5px;
@@ -305,14 +324,69 @@ select {
 
 ============================================================================*/
 
-.slider .big.title{
-  font-family:"york-whiteletter";
-  font-size: 5rem;
+.slider .big.title {
+  font-family: "york-whiteletter";
+  font-size: 4rem;
 }
-.slider .big.title em:nth-child(1){
+
+.slider .big.title em:nth-child(1) {
   font-family: "PoiretOne";
+}
+
+.slider .big.title em:nth-child(2) {
   margin-left: 2rem;
 }
-.slider .big.title em:nth-child(2){
-  margin-left: 2rem;
+
+em {
+  color: #cccccc !important;
+}
+
+/*==========================================================================
+
+                            SECCION UNO
+
+============================================================================*/
+
+.seccion-uno {
+  width: 100%;
+  padding: 50px 0;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-img {
+  width: 50%;
+}
+
+.container-info {
+  width: 40%;
+}
+
+.container-img img {
+  width: 100%;
+}
+
+.container h2 {
+  font-family: "york-whiteletter";
+  font-size: 4rem;
+  color: #ab9b74;
+}
+
+.container h2 em{
+  font-family: "PoiretOne";
+  font-size: 3rem;
+}
+
+.container-parrafo {
+  color: #fefefe;
+  font-family: "PoiretOne";
+  font-size: 1.3rem;
+  margin-top: 10px;
+  line-height: 1.2;
 }
